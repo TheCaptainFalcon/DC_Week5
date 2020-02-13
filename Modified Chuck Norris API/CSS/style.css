@@ -1,0 +1,64 @@
+body {
+    background-image: url("https://www.pngitem.com/pimgs/m/157-1579635_chuck-norris-png-hd-chuck-norris-transparent-background.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.modal-overlay {
+    display:none;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index:9999;
+    overflow: hidden;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 4px;
+    margin: 16rem auto auto auto;
+    width:640px;
+    height: auto;
+    position:relative;
+    z-index: 10000;
+    
+}
+
+
+.modal-content .modal-close {
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    position:absolute;
+    font-size: 16px;
+    padding: 4px;
+    line-height: 1;
+    top:55%;
+    right: 16px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.modal-content p {
+    font-size: 2rem;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#inputSelect {
+    border:1px solid black;
+}

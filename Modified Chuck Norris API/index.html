@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chuck Says...</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Chuck Says:</h1>
+        <button type = "button" id = "refreshQuote">Refresh Quote</button>
+        <input type = "hidden" value= 'animal' id="categoryInput"/>
+        
+        <form id = categoryChangeForm>
+            <label id = categorySelectLabel>Select a Category</label>
+            
+            <button type = "submit" id = "submitForm">Get an Animal Quote</button>
+        </form>
+
+        <form>
+            <label>Type a Category
+                <input type = "type" value = "" id ="inputSelect"/>
+            </label>
+            <button type = "button" id = "selectButton">Generate</button> 
+
+        </form>
+        
+        <div class="modal-overlay"></div>
+            
+            <div class = "modal-content">
+                <span id = "closeModal" class ="modal-close">X</span>
+                <p id = "chuckSays">Chuck Says...</p>   
+            </div>
+            
+
+    </body>
+
+    <script src="js/get.js"></script>
+    <script src="js/scripts.js"></script>
+</html>
